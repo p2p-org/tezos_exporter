@@ -8,6 +8,10 @@ on:
       - 'v*'
   pull_request:
 
+permissions:
+  contents: write # GitHub Packages, GitHub release, push to ghcr.io
+  packages: write # GitHub Packages, GitHub release, push to ghcr.io
+
 jobs:
   goreleaser:
     runs-on: ubuntu-latest
